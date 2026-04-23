@@ -24,7 +24,7 @@ func main() {
 }
 
 func runMain() error {
-	// Print version info to stderr so it doesn't interfere with stdout output
-	fmt.Fprintf(os.Stderr, "WaveTerm %s (build %s)\n", WaveVersion, BuildTime)
+	// Print version info to stdout for easier scripting and version checks
+	fmt.Printf("WaveTerm %s (build %s)\n", WaveVersion, BuildTime)
 	return nil
 }
